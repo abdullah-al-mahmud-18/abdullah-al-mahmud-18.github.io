@@ -4,18 +4,16 @@ project:
 website:
   title: "Abdullah Al Mahmud"
   navbar:
+    title: false
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
 
 
 
