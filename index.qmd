@@ -1,52 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Abdullah Al Mahmud - Full Stack Engineer</title>
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<!-- Navigation -->
-		<nav class="navbar" id="navbar">
-			<div class="nav-container">
-				<div class="logo"><i class="fas fa-code"></i></div>
-				<ul class="nav-menu" id="nav-menu">
-					<li><a href="#home" class="nav-link">Home</a></li>
-					<li><a href="#about" class="nav-link">About</a></li>
-					<li><a href="#skills" class="nav-link">Skills</a></li>
-					<li><a href="#experience" class="nav-link">Experience</a></li>
-					<li><a href="#projects" class="nav-link">Projects</a></li>
-					<li><a href="#education" class="nav-link">Education</a></li>
-					<li><a href="#certifications" class="nav-link">Certifications</a></li>
-					<li><a href="#contact" class="nav-link">Contact</a></li>
-				</ul>
-				<button class="mobile-menu-btn" id="mobile-menu-btn">
-					<i class="fas fa-bars"></i>
-				</button>
-			</div>
-		</nav>
+---
+title: "Abdullah Al Mahmud - Software Engineer"
+title-block-style: none
+page-layout: full
+toc: false
+resources:
+  - script.js
+include-in-header:
+  - text: |
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+---
 
-		<!-- Hero Section -->
+```{=html}
+<!-- Hero Section -->
 		<section id="home" class="hero">
 			<div class="hero-content">
 				<h1 class="hero-title">Abdullah Al Mahmud</h1>
-				<h2 class="hero-subtitle">Full Stack Software Engineer</h2>
+				<h2 class="hero-subtitle">Software Engineer</h2>
 				<p class="hero-description">
 					Passionate about creating innovative solutions with 4+ years of
 					expertise in web development, enterprise applications, and modern
 					technologies. Currently building impactful software at IQVIA.
 				</p>
 				<div class="cta-buttons">
-					<a href="#contact" class="btn btn-primary">
+					<a href="#contact" class="pf-btn pf-btn-primary">
 						<i class="fas fa-envelope"></i>
 						Get In Touch
 					</a>
-					<a href="#projects" class="btn btn-secondary">
+					<a href="#projects" class="pf-btn pf-btn-secondary">
 						<i class="fas fa-code"></i>
 						View Projects
 					</a>
@@ -56,10 +36,10 @@
 
 		<!-- About Section -->
 		<section id="about" class="section section-alt">
-			<div class="container">
+			<div class="pf-container">
 				<h2 class="section-title">Professional Summary</h2>
 				<div class="grid grid-2" style="align-items: start">
-					<div class="card reveal">
+					<div class="pf-card reveal">
 						<h3
 							style="
 								color: var(--accent);
@@ -71,7 +51,7 @@
 							About Me
 						</h3>
 						<p style="margin-bottom: 1.5rem; color: var(--text-secondary)">
-							<strong>Associate Software Developer</strong> at
+							<strong>Software Developer</strong> at
 							<strong>IQVIA</strong> with <strong>4+ years</strong> of
 							experience developing full-stack applications serving
 							<strong>5+ pharmaceutical companies</strong> using
@@ -93,7 +73,7 @@
 						</p>
 					</div>
 
-					<div class="card reveal">
+					<div class="pf-card reveal">
 						<h3
 							style="
 								color: var(--accent);
@@ -179,10 +159,10 @@
 
 		<!-- Skills Section -->
 		<section id="skills" class="section">
-			<div class="container">
+			<div class="pf-container">
 				<h2 class="section-title">Technical Skills</h2>
 				<div class="grid grid-3 reveal">
-					<div class="card">
+					<div class="pf-card">
 						<div class="skill-category">
 							<h3 class="skill-title">
 								<i class="fas fa-server"></i>
@@ -197,7 +177,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div class="skill-category">
 							<h3 class="skill-title">
 								<i class="fas fa-desktop"></i>
@@ -214,7 +194,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div class="skill-category">
 							<h3 class="skill-title">
 								<i class="fas fa-database"></i>
@@ -228,7 +208,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div class="skill-category">
 							<h3 class="skill-title">
 								<i class="fab fa-git-alt"></i>
@@ -244,7 +224,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div class="skill-category">
 							<h3 class="skill-title">
 								<i class="fas fa-cloud"></i>
@@ -259,7 +239,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div class="skill-category">
 							<h3 class="skill-title">
 								<i class="fas fa-tasks"></i>
@@ -284,10 +264,10 @@
 
 		<!-- Experience Section -->
 		<section id="experience" class="section section-alt">
-			<div class="container">
+			<div class="pf-container">
 				<h2 class="section-title">Professional Experience</h2>
 				<div class="reveal">
-					<div class="timeline-item card">
+					<div class="timeline-item pf-card">
 						<div
 							style="
 								display: flex;
@@ -298,7 +278,7 @@
 							"
 						>
 							<div>
-								<h3 class="timeline-title">Associate Software Developer</h3>
+								<h3 class="timeline-title">Software Developer</h3>
 								<p class="timeline-company">IQVIA</p>
 							</div>
 							<span class="timeline-date">August 2021 - Present</span>
@@ -344,34 +324,6 @@
 								Wrote and maintained comprehensive technical documentation for
 								internal and external stakeholders.
 							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="reveal">
-					<div class="timeline-item card">
-						<div
-							style="
-								display: flex;
-								justify-content: space-between;
-								align-items: start;
-								margin-bottom: 1rem;
-								flex-wrap: wrap;
-							"
-						>
-							<div>
-								<h3 class="timeline-title">Full Stack Software Engineer</h3>
-								<p class="timeline-company">Guided Doing (Part Time)</p>
-							</div>
-							<span class="timeline-date">May 2025 - Present</span>
-						</div>
-						<ul style="color: var(--text-secondary); margin-left: 1rem">
-							<li style="margin-bottom: 0.8rem">
-								<i
-									class="fas fa-check-circle"
-									style="color: var(--accent); margin-right: 0.5rem"
-								></i>
-								Upgraded .NET 6 to .NET 8 LTS and frontend to React 18.
-							</li>
 							<li style="margin-bottom: 0.8rem">
 								<i
 									class="fas fa-check-circle"
@@ -408,15 +360,16 @@
 						</ul>
 					</div>
 				</div>
+				
 			</div>
 		</section>
 
 		<!-- Projects Section -->
 		<section id="projects" class="section">
-			<div class="container">
+			<div class="pf-container">
 				<h2 class="section-title">Featured Projects</h2>
 				<div class="grid grid-2 reveal">
-					<div class="card">
+					<div class="pf-card">
 						<div
 							style="
 								display: flex;
@@ -437,7 +390,7 @@
 							</h3>
 							<span
 								style="
-									background: rgba(0, 212, 255, 0.2);
+									background: rgba(0, 0, 0, 0.08);
 									color: var(--accent);
 									padding: 0.25rem 0.75rem;
 									border-radius: 15px;
@@ -472,7 +425,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div
 							style="
 								display: flex;
@@ -493,7 +446,7 @@
 							</h3>
 							<span
 								style="
-									background: rgba(0, 212, 255, 0.2);
+									background: rgba(0, 0, 0, 0.08);
 									color: var(--accent);
 									padding: 0.25rem 0.75rem;
 									border-radius: 15px;
@@ -529,7 +482,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div
 							style="
 								display: flex;
@@ -550,7 +503,7 @@
 							</h3>
 							<span
 								style="
-									background: rgba(0, 212, 255, 0.2);
+									background: rgba(0, 0, 0, 0.08);
 									color: var(--accent);
 									padding: 0.25rem 0.75rem;
 									border-radius: 15px;
@@ -585,7 +538,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div
 							style="
 								display: flex;
@@ -606,7 +559,7 @@
 							</h3>
 							<span
 								style="
-									background: rgba(0, 212, 255, 0.2);
+									background: rgba(0, 0, 0, 0.08);
 									color: var(--accent);
 									padding: 0.25rem 0.75rem;
 									border-radius: 15px;
@@ -638,7 +591,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div
 							style="
 								display: flex;
@@ -662,7 +615,7 @@
 							</h3>
 							<span
 								style="
-									background: rgba(0, 212, 255, 0.2);
+									background: rgba(0, 0, 0, 0.08);
 									color: var(--accent);
 									padding: 0.25rem 0.75rem;
 									border-radius: 15px;
@@ -695,65 +648,7 @@
 						</div>
 					</div>
 
-					<div class="card">
-						<div
-							style="
-								display: flex;
-								justify-content: space-between;
-								align-items: start;
-								margin-bottom: 1rem;
-							"
-						>
-							<h3
-								style="
-									color: var(--accent);
-									font-size: 1.3rem;
-									font-weight: 600;
-								"
-							>
-								<i
-									class="fas fa-graduation-cap"
-									style="margin-right: 0.5rem"
-								></i>
-								Guided Doing
-							</h3>
-							<span
-								style="
-									background: rgba(0, 212, 255, 0.2);
-									color: var(--accent);
-									padding: 0.25rem 0.75rem;
-									border-radius: 15px;
-									font-size: 0.8rem;
-								"
-								>Guided Doing</span
-							>
-						</div>
-						<p style="color: var(--text-secondary); margin-bottom: 1.5rem">
-							Upgraded .NET and React versions. Developed new features.
-							Redesigned CI/CD pipeline. Configured application insights.
-						</p>
-						<div
-							style="
-								display: flex;
-								flex-wrap: wrap;
-								gap: 0.5rem;
-								margin-bottom: 1rem;
-							"
-						>
-							<span class="skill-tag">.NET</span>
-							<span class="skill-tag">React</span>
-							<span class="skill-tag">SQL Server</span>
-							<span class="skill-tag">Azure</span>
-						</div>
-						<div style="display: flex; align-items: center; gap: 1rem">
-							<i class="fas fa-tachometer-alt" style="color: var(--accent)"></i>
-							<span style="color: var(--text-muted); font-size: 0.9rem"
-								>5% performance improvement on application startup</span
-							>
-						</div>
-					</div>
-
-					<div class="card">
+					<div class="pf-card">
 						<div
 							style="
 								display: flex;
@@ -774,7 +669,7 @@
 							</h3>
 							<span
 								style="
-									background: rgba(0, 212, 255, 0.2);
+									background: rgba(0, 0, 0, 0.08);
 									color: var(--accent);
 									padding: 0.25rem 0.75rem;
 									border-radius: 15px;
@@ -800,7 +695,7 @@
 							<span class="skill-tag">Open Source</span>
 						</div>
 						<a
-							href="https://github.com/MahmudMridul?tab=repositories"
+							href="https://github.com/abdullah-al-mahmud-18?tab=repositories"
 							target="_blank"
 							style="
 								display: inline-flex;
@@ -823,10 +718,10 @@
 
 		<!-- Education Section -->
 		<section id="education" class="section section-alt">
-			<div class="container">
+			<div class="pf-container">
 				<h2 class="section-title">Education</h2>
 				<div class="reveal">
-					<div class="timeline-item card">
+					<div class="timeline-item pf-card">
 						<div
 							style="
 								display: flex;
@@ -861,7 +756,7 @@
 						</div>
 					</div>
 
-					<div class="timeline-item card">
+					<div class="timeline-item pf-card">
 						<div
 							style="
 								display: flex;
@@ -893,7 +788,7 @@
 						</div>
 					</div>
 
-					<div class="timeline-item card">
+					<div class="timeline-item pf-card">
 						<div
 							style="
 								display: flex;
@@ -930,10 +825,10 @@
 
 		<!-- Certifications Section -->
 		<section id="certifications" class="section">
-			<div class="container">
+			<div class="pf-container">
 				<h2 class="section-title">Certifications</h2>
 				<div class="grid grid-3 reveal">
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fab fa-microsoft"
@@ -976,7 +871,7 @@
 						</a>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fab fa-microsoft"
@@ -1019,7 +914,7 @@
 						</a>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fab fa-java"
@@ -1062,7 +957,7 @@
 						</a>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fas fa-puzzle-piece"
@@ -1117,7 +1012,7 @@
 					Courses
 				</h3>
 				<div class="grid grid-3 reveal">
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fas fa-code"
@@ -1158,7 +1053,7 @@
 						</a>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fas fa-search"
@@ -1199,7 +1094,7 @@
 						</a>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fas fa-database"
@@ -1240,7 +1135,7 @@
 						</a>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fas fa-cogs"
@@ -1281,7 +1176,7 @@
 						</a>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fas fa-layer-group"
@@ -1322,7 +1217,7 @@
 						</a>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<div style="margin-bottom: 1rem">
 							<i
 								class="fas fa-cube"
@@ -1368,10 +1263,10 @@
 
 		<!-- Contact Section -->
 		<section id="contact" class="section section-alt">
-			<div class="container">
+			<div class="pf-container">
 				<h2 class="section-title">Get In Touch</h2>
 				<div class="grid grid-2 reveal">
-					<div class="card">
+					<div class="pf-card">
 						<h3
 							style="
 								color: var(--accent);
@@ -1425,8 +1320,8 @@
 								</div>
 								<div>
 									<strong>GitHub</strong><br />
-									<a href="https://github.com/MahmudMridul" target="_blank"
-										>MahmudMridul</a
+									<a href="https://github.com/abdullah-al-mahmud-18" target="_blank"
+										>abdullah-al-mahmud-18</a
 									>
 								</div>
 							</div>
@@ -1443,7 +1338,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="pf-card">
 						<h3
 							style="
 								color: var(--accent);
@@ -1469,7 +1364,7 @@
 						<div style="display: flex; flex-direction: column; gap: 1rem">
 							<a
 								href="mailto:mahmudmridul.185@gmail.com"
-								class="btn btn-primary"
+								class="pf-btn pf-btn-primary"
 								style="text-align: center"
 							>
 								<i class="fas fa-envelope"></i>
@@ -1477,7 +1372,7 @@
 							</a>
 							<a
 								href="tel:+8801798171939"
-								class="btn btn-secondary"
+								class="pf-btn pf-btn-secondary"
 								style="text-align: center"
 							>
 								<i class="fas fa-phone"></i>
@@ -1486,7 +1381,7 @@
 							<a
 								href="https://www.linkedin.com/in/abdullahalmahmudmridul/"
 								target="_blank"
-								class="btn btn-secondary"
+								class="pf-btn pf-btn-secondary"
 								style="text-align: center"
 							>
 								<i class="fab fa-linkedin"></i>
@@ -1500,11 +1395,12 @@
 
 		<!-- Footer -->
 		<footer class="footer">
-			<div class="container">
-				<p style="color: var(--text-muted)">© 2025 Abdullah Al Mahmud</p>
+			<div class="pf-container">
+				<p style="color: var(--text-muted)">© <span id="current-year">2025</span> Abdullah Al Mahmud</p>
 			</div>
 		</footer>
+```
 
-		<script src="script.js"></script>
-	</body>
-</html>
+```{=html}
+<script src="script.js"></script>
+```

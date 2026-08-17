@@ -1,16 +1,16 @@
 :root {
-  --primary-bg: #0a0a0a;
-  --secondary-bg: #1a1a1a;
-  --card-bg: #222222;
-  --accent: #00d4ff;
-  --accent-hover: #00b8e6;
-  --text-primary: #ffffff;
-  --text-secondary: #b0b0b0;
-  --text-muted: #888888;
-  --border: #333333;
-  --gradient: linear-gradient(135deg, var(--accent), #0066cc);
-  --shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
-  --hover-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+  --primary-bg: #ffffff;
+  --secondary-bg: #f5f5f5;
+  --card-bg: #ffffff;
+  --accent: #000000;
+  --accent-hover: #333333;
+  --text-primary: #000000;
+  --text-secondary: #4a4a4a;
+  --text-muted: #767676;
+  --border: #dddddd;
+  --gradient: #000000;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -27,150 +27,29 @@ body {
   overflow-x: hidden;
 }
 
-/* Background Animation */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-      circle at 20% 50%,
-      rgba(0, 212, 255, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(0, 102, 204, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 40% 80%,
-      rgba(0, 212, 255, 0.05) 0%,
-      transparent 50%
-    );
-  z-index: -1;
-  animation: bgShift 20s ease-in-out infinite;
-}
-
-@keyframes bgShift {
-  0%,
-  100% {
-    transform: translateX(0px) translateY(0px);
-  }
-  25% {
-    transform: translateX(-20px) translateY(-10px);
-  }
-  50% {
-    transform: translateX(20px) translateY(10px);
-  }
-  75% {
-    transform: translateX(-10px) translateY(20px);
-  }
-}
-
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Navigation */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(26, 26, 26, 0.95);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  padding: 1rem 0;
-  transition: all 0.3s ease;
-}
-
-.navbar.scrolled {
-  padding: 0.5rem 0;
-  box-shadow: var(--shadow);
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--accent);
-}
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.nav-link {
-  color: var(--text-secondary);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.nav-link:hover {
-  color: var(--accent);
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--gradient);
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-.mobile-menu-btn {
+/* Hide Quarto's auto-generated page title block (portfolio provides its own heading) */
+#title-block-header {
   display: none;
-  background: none;
-  border: none;
-  color: var(--accent);
-  font-size: 1.5rem;
-  cursor: pointer;
 }
 
-/* Responsive Navigation */
-@media (max-width: 768px) {
-  .nav-menu {
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background: rgba(26, 26, 26, 0.98);
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 2rem;
-    transition: left 0.3s ease;
-  }
+/* Quarto site navbar (black & white minimal) */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid var(--border);
+}
 
-  .nav-menu.active {
-    left: 0;
-  }
+.navbar-brand,
+.navbar .nav-link {
+  color: #000000 !important;
+}
 
-  .mobile-menu-btn {
-    display: block;
-  }
+.navbar .nav-link:hover {
+  color: #555555 !important;
 }
 
 /* Hero Section */
@@ -194,10 +73,7 @@ html {
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 700;
   margin-bottom: 1rem;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
   animation: fadeInUp 1s ease-out;
 }
 
@@ -223,7 +99,7 @@ html {
   animation: fadeInUp 1s ease-out 0.6s both;
 }
 
-.btn {
+.pf-btn {
   padding: 1rem 2rem;
   border: none;
   border-radius: 50px;
@@ -236,24 +112,24 @@ html {
   cursor: pointer;
 }
 
-.btn-primary {
+.pf-btn-primary {
   background: var(--gradient);
   color: white;
   box-shadow: var(--shadow);
 }
 
-.btn-primary:hover {
+.pf-btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: var(--hover-shadow);
 }
 
-.btn-secondary {
+.pf-btn-secondary {
   background: transparent;
   color: var(--accent);
   border: 2px solid var(--accent);
 }
 
-.btn-secondary:hover {
+.pf-btn-secondary:hover {
   background: var(--accent);
   color: white;
   transform: translateY(-3px);
@@ -269,7 +145,7 @@ html {
   background: var(--secondary-bg);
 }
 
-.container {
+.pf-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -280,14 +156,11 @@ html {
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 /* Cards */
-.card {
+.pf-card {
   background: var(--card-bg);
   border-radius: 15px;
   padding: 2rem;
@@ -296,7 +169,7 @@ html {
   height: 100%;
 }
 
-.card:hover {
+.pf-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--hover-shadow);
   border-color: var(--accent);
@@ -341,12 +214,12 @@ html {
 }
 
 .skill-tag {
-  background: rgba(0, 212, 255, 0.1);
-  color: var(--accent);
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-size: 0.9rem;
-  border: 1px solid rgba(0, 212, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
 
@@ -418,6 +291,7 @@ html {
   gap: 1rem;
   padding: 1rem;
   background: var(--card-bg);
+  border: 1px solid var(--border);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
@@ -445,7 +319,7 @@ html {
 }
 
 .contact-item a:hover {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 /* Footer */
@@ -525,7 +399,7 @@ html {
     padding: 3rem 0;
   }
 
-  .container {
+  .pf-container {
     padding: 0 1rem;
   }
 
@@ -540,7 +414,7 @@ html {
     align-items: center;
   }
 
-  .btn {
+  .pf-btn {
     width: 100%;
     max-width: 300px;
     justify-content: center;
@@ -560,7 +434,7 @@ html {
     font-size: 2rem;
   }
 
-  .card {
+  .pf-card {
     padding: 1.5rem;
   }
 }

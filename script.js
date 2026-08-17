@@ -1,29 +1,8 @@
-// Mobile Navigation Toggle
-const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-const navMenu = document.getElementById("nav-menu");
-const navbar = document.getElementById("navbar");
-
-mobileMenuBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-  const icon = mobileMenuBtn.querySelector("i");
-  if (navMenu.classList.contains("active")) {
-    icon.classList.remove("fa-bars");
-    icon.classList.add("fa-times");
-  } else {
-    icon.classList.remove("fa-times");
-    icon.classList.add("fa-bars");
-  }
-});
-
-// Close mobile menu when clicking on links
-document.querySelectorAll(".nav-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("active");
-    const icon = mobileMenuBtn.querySelector("i");
-    icon.classList.remove("fa-times");
-    icon.classList.add("fa-bars");
-  });
-});
+// Footer copyright year
+const currentYearEl = document.getElementById("current-year");
+if (currentYearEl) {
+  currentYearEl.textContent = new Date().getFullYear();
+}
 
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -38,15 +17,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       });
     }
   });
-});
-
-// Navbar scroll effect
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
 });
 
 // Scroll reveal animation
@@ -84,31 +54,6 @@ function typeWriter() {
 
 // Start typing effect after page load
 setTimeout(typeWriter, 1000);
-
-// Add active nav link highlighting
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav-link");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 120;
-    const sectionHeight = section.clientHeight;
-    if (
-      window.pageYOffset >= sectionTop &&
-      window.pageYOffset < sectionTop + sectionHeight
-    ) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
-});
 
 // Parallax effect for background
 window.addEventListener("scroll", () => {
