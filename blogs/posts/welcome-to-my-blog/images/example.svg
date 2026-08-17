@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" role="img" aria-label="Simple pipeline diagram: Input leads to Model leads to Output">
+  <rect x="0" y="0" width="600" height="240" fill="#f5f5f5"/>
+  <g font-family="Segoe UI, sans-serif" font-size="20" fill="#000000">
+    <rect x="30" y="90" width="140" height="60" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+    <text x="100" y="125" text-anchor="middle" dominant-baseline="middle">Input</text>
+
+    <rect x="230" y="90" width="140" height="60" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+    <text x="300" y="125" text-anchor="middle" dominant-baseline="middle">Model</text>
+
+    <rect x="430" y="90" width="140" height="60" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+    <text x="500" y="125" text-anchor="middle" dominant-baseline="middle">Output</text>
+
+    <line x1="170" y1="120" x2="230" y2="120" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="370" y1="120" x2="430" y2="120" stroke="#000000" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#000000"/>
+    </marker>
+  </defs>
+</svg>

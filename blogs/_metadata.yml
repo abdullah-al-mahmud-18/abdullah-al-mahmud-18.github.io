@@ -1,0 +1,7 @@
+toc: true
+toc-depth: 3
+number-sections: false
+code-tools: true
+code-fold: false
+date-format: "MMMM D, YYYY"
+title-block-banner: false

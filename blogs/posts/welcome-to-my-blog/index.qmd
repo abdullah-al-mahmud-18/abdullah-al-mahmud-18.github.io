@@ -1,0 +1,39 @@
+---
+title: "Welcome to My Blog"
+subtitle: "A quick tour of code, math, and images in this new setup."
+description: "Kicking off the blog with a sanity check on code blocks, LaTeX math, and images."
+date: 2026-08-17
+categories: [meta]
+---
+
+This is the first post, mostly to confirm that code, math, and images all render
+correctly before writing anything real.
+
+## Code
+
+Syntax highlighting and a copy button come for free:
+
+```python
+def softmax(logits: list[float]) -> list[float]:
+    exps = [pow(2.718281828, x) for x in logits]
+    total = sum(exps)
+    return [e / total for e in exps]
+```
+
+Inline code like `pip install torch` works too.
+
+## Math
+
+Inline math: the attention score is $\text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V$.
+
+Display math:
+
+$$
+P(w_t \mid w_{<t}) = \frac{\exp(z_t)}{\sum_{i=1}^{|V|} \exp(z_i)}
+$$
+
+## Images
+
+![A trivial input-model-output pipeline](images/example.svg)
+
+That covers the basics — code, equations, and images all in one post.

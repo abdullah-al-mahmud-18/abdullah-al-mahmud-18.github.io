@@ -32,11 +32,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Hide Quarto's auto-generated page title block (portfolio provides its own heading) */
-#title-block-header {
-  display: none;
-}
-
 /* Quarto site navbar (black & white minimal) */
 .navbar {
   background-color: #ffffff !important;

@@ -1,0 +1,13 @@
+---
+title: "Blogs"
+subtitle: "Notes on software engineering, machine learning, and NLP."
+page-layout: full
+toc: false
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  categories: true
+  feed: true
+  fields: [image, date, title, subtitle, reading-time, categories]
+---
