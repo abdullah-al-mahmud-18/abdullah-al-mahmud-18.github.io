@@ -289,6 +289,13 @@ html {
   border: 1px solid var(--border);
   border-radius: 10px;
   transition: all 0.3s ease;
+  min-width: 0;
+}
+
+.contact-item > div {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .contact-item:hover {
