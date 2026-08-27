@@ -1,6 +1,6 @@
 ---
 title: "Blogs"
-subtitle: "Notes on software engineering, machine learning, and NLP."
+subtitle: "AI explained simply."
 page-layout: full
 toc: false
 listing:
