@@ -8,6 +8,7 @@ resources:
 include-in-header:
   - text: |
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+      <style>#title-block-header { display: none; }</style>
 ---
 
 ```{=html}
@@ -721,6 +722,41 @@ include-in-header:
 			<div class="pf-container">
 				<h2 class="section-title">Education</h2>
 				<div class="reveal">
+					<div class="timeline-item pf-card">
+						<div
+							style="
+								display: flex;
+								justify-content: space-between;
+								align-items: start;
+								margin-bottom: 1rem;
+								flex-wrap: wrap;
+							"
+						>
+							<div>
+								<h3 class="timeline-title">
+									<i
+										class="fas fa-graduation-cap"
+										style="margin-right: 0.5rem"
+									></i>
+									Masters of Science in Data Science
+								</h3>
+								<p
+									style="
+										color: var(--text-secondary);
+										font-size: 1.1rem;
+										margin: 0.5rem 0;
+									"
+								>
+									BRAC University
+								</p>
+								<p style="color: var(--accent); font-weight: 600">
+									CGPA: 3.85 out of 4.00
+								</p>
+							</div>
+							<span class="timeline-date">2025 - Present</span>
+						</div>
+					</div>
+
 					<div class="timeline-item pf-card">
 						<div
 							style="

@@ -3,17 +3,24 @@ project:
 
 website:
   title: "Abdullah Al Mahmud"
+  site-url: "https://abdullah-al-mahmud-18.github.io"
   navbar:
     title: false
     left:
       - href: index.qmd
         text: Home
+      - href: blogs/index.qmd
+        text: Blogs
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: false
+    html-math-method: mathjax
+    highlight-style: github
+    code-copy: true
+    code-overflow: wrap
 
 
 
